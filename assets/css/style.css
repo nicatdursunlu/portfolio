@@ -234,7 +234,6 @@ section .title::after {
   background: none;
 }
 
-
 /* services section */
 
 .services {
@@ -279,10 +278,6 @@ section .title::after {
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-
-
-
-
 
 /* responsive media query */
 
@@ -365,6 +360,10 @@ section .title::after {
   .about .about-content .right {
     flex: 100%;
   }
+  .services .services-content .card {
+    width: (50% - 10px);
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -379,6 +378,9 @@ section .title::after {
   }
   .home .home-content a {
     font-size: 20px;
+  }
+  .services .services-content .card {
+    width: 100%;
   }
 }
 
