@@ -26,6 +26,7 @@ section {
 .about,
 .services,
 .skills,
+.education,
 .contact,
 footer {
   font-family: "Poppins", sans-serif;
@@ -34,6 +35,7 @@ footer {
 .about .about-content,
 .services .services-content,
 .skills .skills-content,
+.education .education-content,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -227,15 +229,16 @@ section .title::after {
   background: none;
 }
 
-.home .home-content .sicoal-media {
+.home .home-content .social-media {
   margin-top: 100px;
   align-items: center;
-  justify-content: center;
+  width: calc(25%);
+  display: flex;
+  justify-content: space-between;
 }
 
 .home .home-content .icons {
   font-size: 30px;
-  margin-right: 20px;
   transition: all 0.3s ease;
   color: #fff;
 }
@@ -252,35 +255,8 @@ section .title::after {
   color: #1778f2;
 }
 
-.home .home-content .instagram:hover {
-  background: #f09433;
-  background: -moz-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-  padding: 2px;
-  border-radius: 6px;
+.home .home-content .email:hover {
+  color: crimson;
 }
 
 /* about section */
@@ -350,11 +326,11 @@ section .title::after {
   content: "what i provide";
 }
 .services .services-content .card {
-  width: calc(33% - 20px);
+  width: calc(50% - 50px);
   background: #222;
   text-align: center;
   border-radius: 6px;
-  padding: 20px 25px;
+  padding: 40px 25px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -371,6 +347,7 @@ section .title::after {
   font-size: 50px;
   color: crimson;
   transition: color 0.3s ease;
+  padding-bottom: 20px;
 }
 .services .services-content .card:hover i {
   color: #fff;
@@ -388,7 +365,7 @@ section .title::after {
 }
 
 .skills .skills-content .column {
-  width: calc(50% - 30px);
+  width: calc(50% - 70px);
 }
 
 .skills .skills-content .left .text {
@@ -419,8 +396,101 @@ section .title::after {
   background: none;
 }
 
+.skills .skills-content .left .language {
+  margin-top: 20px;
+}
+
+.skills .skills-content .left .language-skills {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.language-skills .box {
+  text-align: center;
+  width: 50%;
+  margin-right: 30%;
+}
+
+.circle {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.language-item {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+svg {
+  position: relative;
+  width: 130px;
+  height: 130px;
+}
+
+svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: lightgray;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 210;
+}
+
+.az svg circle:nth-child(2) {
+  stroke-dashoffset: calc(400 - (400 * 100) / 100);
+  stroke: crimson;
+}
+
+.ru svg circle:nth-child(2) {
+  stroke-dashoffset: calc(400 - (400 * 80) / 100);
+  stroke: crimson;
+}
+
+.eng svg circle:nth-child(2) {
+  stroke-dashoffset: calc(400 - (400 * 65) / 100);
+  stroke: crimson;
+}
+
+.tr svg circle:nth-child(2) {
+  stroke-dashoffset: calc(400 - (400 * 80) / 100);
+  stroke: crimson;
+}
+
+
+.skills .skills-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 .skills .skills-content .right .bars {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .skills .skills-content .right .info {
@@ -436,10 +506,11 @@ section .title::after {
 }
 
 .skills .skills-content .right .line {
-  height: 5px;
+  height: 8px;
   width: 100%;
   background: lightgray;
   position: relative;
+  border-radius: 6px;
 }
 
 .skills .skills-content .right .line::before {
@@ -449,13 +520,18 @@ section .title::after {
   left: 0;
   top: 0;
   background: crimson;
+  border-radius: 6px;
 }
 
 .skills-content .right .html::before {
-  width: 80%;
+  width: 90%;
 }
 
 .skills-content .right .css::before {
+  width: 90%;
+}
+
+.skills-content .right .bootstrap::before {
   width: 60%;
 }
 
@@ -463,17 +539,114 @@ section .title::after {
   width: 80%;
 }
 
-.skills-content .right .php::before {
-  width: 50%;
+.skills-content .right .react::before {
+  width: 90%;
 }
 
-.skills-content .right .mysql::before {
-  width: 70%;
+.skills-content .right .react-native::before {
+  width: 90%;
 }
 
-.skills-content .right .html::before {
+.skills-content .right .redux::before {
+  width: 85%;
+}
+
+.skills-content .right .git::before {
   width: 80%;
 }
+
+.skills-content .right .prog-languages::before {
+  width: 55%;
+}
+
+
+/* education section   */
+
+.education {
+  color: #fff;
+  background: #111;
+}
+
+.education .title::before {
+  background: #fff;
+}
+
+.education .title::after {
+  background: #111;
+  content: "what i provide";
+}
+
+.education .education-content .card {
+  width: calc(50% - 50px);
+  background: #222;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  padding: 40px 25px;
+  /* height: 400px; */
+}
+
+.services .services-content .card:hover {
+  background: crimson;
+}
+
+.education .education-content .card .box {
+  transition: all 0.3s ease;
+}
+
+.education .education-content .card i {
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
+  padding-bottom: 20px;
+}
+
+.education .education-content .card:hover i {
+  color: #fff;
+}
+
+.university {
+  color: #fff;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.university:hover {
+  color: crimson;
+}
+
+.speciality {
+  color: crimson;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.degree {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.modules {
+  padding: 20px 50px;
+}
+
+
+.education .education-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* contact section */
 
@@ -751,7 +924,8 @@ footer .footer-social-media .instagram:hover {
   .about .about-content .right {
     flex: 100%;
   }
-  .services .services-content .card {
+  .services .services-content .card,
+  .education .education-content .card {
     width: calc(50% - 20px);
     margin-bottom: 20px;
   }
@@ -759,6 +933,8 @@ footer .footer-social-media .instagram:hover {
   .contact .contact-content .column {
     width: 100%;
     margin-bottom: 35px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -775,9 +951,11 @@ footer .footer-social-media .instagram:hover {
   .home .home-content a {
     font-size: 20px;
   }
-  .services .services-content .card {
+  .services .services-content .card,
+  .education .education-content .card {
     width: 100%;
   }
+  
 }
 
 @media (max-width: 560px) {
