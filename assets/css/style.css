@@ -181,8 +181,9 @@ section .title::after {
 
 .home {
   display: flex;
-  background: url("../images/banner.jpg") no-repeat center;
-  height: 100vh;
+  /* background: url("../images/banner.jpg") no-repeat center; */
+  background-image: url("../images/banner.jpg");
+  height: 110vh;
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
   color: #ffffff;
@@ -422,15 +423,14 @@ section .title::after {
 .skills .skills-content .left .language-skills {
   display: flex;
   margin-top: 20px;
-  justify-content: space-between;
-  width: 80%;
+  /* justify-content: space-between; */
+  width: 70%;
 }
 
 .language-skills .box {
-  /* width: 40%; */
-  /* margin-right: 25%; */
   background-color: aqua;
   text-align: center;
+  margin-right: 10px;
 }
 
 .circle {
@@ -1000,6 +1000,10 @@ footer .footer-social-media .instagram:hover {
   .services .services-content .card,
   .education .education-content .card {
     width: 100%;
+    padding: 30px;
+  }
+  .modules {
+    padding: 20px 30px;
   }
 }
 
@@ -1013,26 +1017,12 @@ footer .footer-social-media .instagram:hover {
   .home .home-content .text-3 {
     font-size: 27px;
   }
-
-  /* .language-skills .box {
-    text-align: center;
-    margin-right: 15%;
-    background-color: aqua;
-  } */
-
-  /* .circle {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    align-self: center;
+  .about .about-content .left img {
+    height: 270px;
+    width: 195px;
+    object-fit: cover;
+    border-radius: 6px;
   }
-  svg {
-    position: relative;
-    width: 100px;
-    height: 100px;
-  } */
-  .circle {
-    
-  }
+
+  
 }
