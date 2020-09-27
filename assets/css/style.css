@@ -422,7 +422,7 @@ section .title::after {
 .skills .skills-content .left .language-skills {
   display: flex;
   margin-top: 20px;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 80%;
 }
 
@@ -1032,4 +1032,7 @@ footer .footer-social-media .instagram:hover {
     width: 100px;
     height: 100px;
   } */
+  .circle {
+    
+  }
 }
