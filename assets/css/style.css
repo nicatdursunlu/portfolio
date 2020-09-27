@@ -427,7 +427,6 @@ section .title::after {
 }
 
 .language-skills .box {
-  background-color: aqua;
   text-align: center;
   margin-right: 100px;
 }
@@ -1008,15 +1007,9 @@ footer .footer-social-media .instagram:hover {
     padding: 20px 30px;
   }
   .language-skills .box {
-    margin-right: 50px;
+    margin-right: 70px;
   }
 }
-
-/* @media (max-width: 560px) {
-  .language-skills .box {
-    margin-right: 50px;
-  }
-} */
 
 @media (max-width: 560px) {
   .max-width {
@@ -1028,12 +1021,12 @@ footer .footer-social-media .instagram:hover {
   .home .home-content .text-3 {
     font-size: 27px;
   }
-  .about .about-content .left img {
+  /* .about .about-content .left img {
     height: 270px;
     width: 195px;
     object-fit: cover;
     border-radius: 6px;
-  }
+  } */
 
   .language-skills .box {
     margin-right: 30px;
