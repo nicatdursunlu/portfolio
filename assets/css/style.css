@@ -384,7 +384,7 @@ section .title::after {
 }
 
 .skills .skills-content .column {
-  width: calc(50% - 70px);
+  width: calc(50% - 20px);
 }
 
 .skills .skills-content .left .text {
@@ -428,7 +428,7 @@ section .title::after {
 .language-skills .box {
   text-align: center;
   width: 50%;
-  margin-right: 30%;
+  margin-right: 20%;
 }
 
 .circle {
@@ -599,8 +599,7 @@ svg circle:nth-child(2) {
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
-
-  padding: 40px 25px;
+  padding: 40px;
 }
 
 .services .services-content .card:hover {
@@ -634,17 +633,17 @@ svg circle:nth-child(2) {
 
 .speciality {
   color: crimson;
-  font-size: 23px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .degree {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  opacity: 0.5;
 }
 
 .modules {
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .education .education-content .card .text {
