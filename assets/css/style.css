@@ -898,6 +898,9 @@ footer .footer-social-media .instagram:hover {
   .max-width {
     padding: 0 50px;
   }
+  /* .language-skills .box {
+    margin-right: 80px;
+  } */
 }
 
 @media (max-width: 947px) {
@@ -1008,6 +1011,12 @@ footer .footer-social-media .instagram:hover {
     margin-right: 50px;
   }
 }
+
+/* @media (max-width: 560px) {
+  .language-skills .box {
+    margin-right: 50px;
+  }
+} */
 
 @media (max-width: 560px) {
   .max-width {
