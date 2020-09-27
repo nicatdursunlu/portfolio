@@ -423,14 +423,13 @@ section .title::after {
 .skills .skills-content .left .language-skills {
   display: flex;
   margin-top: 20px;
-  /* justify-content: space-between; */
-  width: 70%;
+  width: 100%;
 }
 
 .language-skills .box {
   background-color: aqua;
   text-align: center;
-  margin-right: 10px;
+  margin-right: 100px;
 }
 
 .circle {
@@ -1024,5 +1023,7 @@ footer .footer-social-media .instagram:hover {
     border-radius: 6px;
   }
 
-  
+  .language-skills .box {
+    margin-right: 20px;
+  }
 }
