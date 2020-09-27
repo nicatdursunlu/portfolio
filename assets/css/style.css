@@ -421,14 +421,16 @@ section .title::after {
 
 .skills .skills-content .left .language-skills {
   display: flex;
-  align-items: center;
   margin-top: 20px;
+  justify-content: space-around;
+  width: 80%;
 }
 
 .language-skills .box {
+  /* width: 40%; */
+  /* margin-right: 25%; */
+  background-color: aqua;
   text-align: center;
-  width: 50%;
-  margin-right: 20%;
 }
 
 .circle {
@@ -1011,4 +1013,23 @@ footer .footer-social-media .instagram:hover {
   .home .home-content .text-3 {
     font-size: 27px;
   }
+
+  /* .language-skills .box {
+    text-align: center;
+    margin-right: 15%;
+    background-color: aqua;
+  } */
+
+  /* .circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align-self: center;
+  }
+  svg {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  } */
 }
