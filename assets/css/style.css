@@ -32,6 +32,7 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 
+.home .home-content,
 .about .about-content,
 .services .services-content,
 .skills .skills-content,
@@ -180,7 +181,6 @@ section .title::after {
 
 .home {
   display: flex;
-  /* background-color: #3c341f; */
   background: url("../images/banner.jpg") no-repeat center;
   height: 100vh;
   min-height: 500px;
@@ -190,6 +190,14 @@ section .title::after {
 
 .home .max-width {
   margin: auto 0 auto 40px;
+}
+
+.home .home-content .left {
+  width: 60%;
+}
+
+.home .home-content .right {
+  width: 5%;
 }
 
 .home .home-content .text-1 {
@@ -230,21 +238,25 @@ section .title::after {
 }
 
 .home .home-content .social-media {
-  margin-top: 100px;
+  margin-top: 50px;
   align-items: center;
-  width: calc(25%);
   display: flex;
-  justify-content: space-between;
 }
 
 .home .home-content .icons {
   font-size: 30px;
   transition: all 0.3s ease;
   color: #fff;
+  margin-right: 20px;padding: 3px;
+}
+
+.home .home-content .icons:hover {
+  background-color: #fff;
+  border-radius: 6px;
 }
 
 .home .home-content .github:hover {
-  color: crimson;
+  color: rgb(94, 88, 88);
 }
 
 .home .home-content .linkedin:hover {
@@ -256,7 +268,14 @@ section .title::after {
 }
 
 .home .home-content .email:hover {
-  color: crimson;
+  color: rgb(94, 88, 88);
+}
+
+.home .home-content .right img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: 5px solid crimson;
 }
 
 /* about section */
@@ -326,7 +345,7 @@ section .title::after {
   content: "what i provide";
 }
 .services .services-content .card {
-  width: calc(50% - 50px);
+  width: calc(50% - 20px);
   background: #222;
   text-align: center;
   border-radius: 6px;
@@ -482,7 +501,6 @@ svg circle:nth-child(2) {
   stroke: crimson;
 }
 
-
 .skills .skills-content .right .text {
   font-size: 25px;
   font-weight: 600;
@@ -559,7 +577,6 @@ svg circle:nth-child(2) {
   width: 55%;
 }
 
-
 /* education section   */
 
 .education {
@@ -577,14 +594,13 @@ svg circle:nth-child(2) {
 }
 
 .education .education-content .card {
-  width: calc(50% - 50px);
+  width: calc(50% - 20px);
   background: #222;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
-  
+
   padding: 40px 25px;
-  /* height: 400px; */
 }
 
 .services .services-content .card:hover {
@@ -628,25 +644,14 @@ svg circle:nth-child(2) {
 }
 
 .modules {
-  padding: 20px 50px;
+  padding: 20px;
 }
-
 
 .education .education-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* contact section */
 
@@ -798,10 +803,17 @@ footer .footer-social-media .icons {
   margin-right: 40px;
   transition: all 0.3s ease;
   color: #fff;
+  padding: 0 3px;
+}
+
+footer .footer-social-media .icons:hover {
+  background-color: #fff;
+  border-radius: 6px;
+  
 }
 
 footer .footer-social-media .github:hover {
-  color: crimson;
+  color: rgb(94, 88, 88);;
 }
 
 footer .footer-social-media .linkedin:hover {
@@ -839,15 +851,26 @@ footer .footer-social-media .instagram:hover {
     #bc1888 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-  padding: 2px;
   border-radius: 6px;
 }
+
+
+
 
 /* responsive media query */
 
 @media (max-width: 1300px) {
   .home .max-width {
     margin-left: 0;
+  }
+  .home .home-content .right {
+    width: 15%;
+  }
+  .home .home-content .right img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 100%;
   }
 }
 
@@ -857,6 +880,17 @@ footer .footer-social-media .instagram:hover {
     width: 265px;
     object-fit: cover;
     border-radius: 6px;
+  }
+  .home .home-content .right img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+  .home .home-content .right {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
   }
 }
 
@@ -913,20 +947,31 @@ footer .footer-social-media .instagram:hover {
   .max-width {
     max-width: 800px;
   }
+  .home .home-content .column,
   .about .about-content .column {
     width: 50%;
   }
+
+  .home .home-content .right,
   .about .about-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
+
+  .home .home-content .icons {
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+
+  .home .home-content .left,
   .about .about-content .right {
     flex: 100%;
   }
-  .services .services-content .card,
-  .education .education-content .card {
-    width: calc(50% - 20px);
+
+  .education .education-content .card,
+  .services .services-content .card {
+    width: calc(100%);
     margin-bottom: 20px;
   }
   .skills .skills-content .column,
@@ -955,7 +1000,6 @@ footer .footer-social-media .instagram:hover {
   .education .education-content .card {
     width: 100%;
   }
-  
 }
 
 @media (max-width: 560px) {
