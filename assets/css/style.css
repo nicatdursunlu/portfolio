@@ -1102,3 +1102,10 @@ footer .footer-social-media .instagram:hover {
     column-gap: 2rem;
   }
 }
+
+
+@media (max-width: 350px) {
+  .home {
+    height: 120vh;
+  }
+}
