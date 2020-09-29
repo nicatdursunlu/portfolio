@@ -28,6 +28,7 @@ section {
 .skills,
 .education,
 .contact,
+.works,
 footer {
   font-family: "Poppins", sans-serif;
 }
@@ -119,6 +120,7 @@ section .title::after {
 }
 
 .navbar .menu li a {
+  display: block;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -181,9 +183,8 @@ section .title::after {
 
 .home {
   display: flex;
-  /* background: url("../images/banner.jpg") no-repeat center; */
   background-image: url("../images/banner.jpg");
-  height: 110vh;
+  height: 100vh;
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
   color: #ffffff;
@@ -194,7 +195,7 @@ section .title::after {
 }
 
 .home .home-content .left {
-  width: 60%;
+  width: 70%;
 }
 
 .home .home-content .right {
@@ -248,7 +249,8 @@ section .title::after {
   font-size: 30px;
   transition: all 0.3s ease;
   color: #fff;
-  margin-right: 20px;padding: 3px;
+  margin-right: 20px;
+  padding: 3px;
 }
 
 .home .home-content .icons:hover {
@@ -652,6 +654,68 @@ svg circle:nth-child(2) {
   margin: 10px 0 7px 0;
 }
 
+/* works section  */
+
+.works .title::after {
+  content: "what i did";
+}
+
+/* .grid {
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  border-radius: .5rem;
+  overflow: hidden;
+  background-color: aqua;
+
+} */
+
+.works-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 32px;
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  margin-right: 16px;
+  row-gap: 2rem;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* column-gap: 2rem; */
+}
+
+.grid {
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  visibility: visible;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s,
+    transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
+}
+
+.grid img {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid img:hover {
+  transform: scale(1.4);
+}
+
+.grid .name {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  color: crimson;
+}
+
 /* contact section */
 
 .contact .title::after {
@@ -808,11 +872,10 @@ footer .footer-social-media .icons {
 footer .footer-social-media .icons:hover {
   background-color: #fff;
   border-radius: 6px;
-  
 }
 
 footer .footer-social-media .github:hover {
-  color: rgb(94, 88, 88);;
+  color: rgb(94, 88, 88);
 }
 
 footer .footer-social-media .linkedin:hover {
@@ -852,9 +915,6 @@ footer .footer-social-media .instagram:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   border-radius: 6px;
 }
-
-
-
 
 /* responsive media query */
 
@@ -897,9 +957,6 @@ footer .footer-social-media .instagram:hover {
   .max-width {
     padding: 0 50px;
   }
-  /* .language-skills .box {
-    margin-right: 80px;
-  } */
 }
 
 @media (max-width: 947px) {
@@ -983,6 +1040,18 @@ footer .footer-social-media .instagram:hover {
     align-items: center;
     justify-content: center;
   }
+
+  .works-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 32px;
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 690px) {
@@ -1015,20 +1084,21 @@ footer .footer-social-media .instagram:hover {
   .max-width {
     padding: 0 23px;
   }
+  .home {
+    height: 110vh;
+  }
   .home .home-content .text-2 {
     font-size: 50px;
   }
   .home .home-content .text-3 {
     font-size: 27px;
   }
-  /* .about .about-content .left img {
-    height: 270px;
-    width: 195px;
-    object-fit: cover;
-    border-radius: 6px;
-  } */
-
   .language-skills .box {
     margin-right: 30px;
+  }
+  .works-container { 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 2rem;
   }
 }
