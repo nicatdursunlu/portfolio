@@ -1,2 +1,1 @@
-# portfolio
-https://nicatdursunlu.github.io/portfolio/
+# https://nicatdursunlu.github.io/portfolio/
