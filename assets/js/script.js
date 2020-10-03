@@ -50,8 +50,8 @@ $(document).ready(function () {
   sr.reveal(".education-content", {});
   sr.reveal(".education-content", {});
   sr.reveal(".works-container", {});
-  sr.reveal(".left", { delay: 300 });
-  sr.reveal(".right", { delay: 900 });
+  sr.reveal(".left", { delay: 200 });
+  sr.reveal(".right", { delay: 600 });
 
   /* SCROLL HOME */ 
   sr.reveal(".text-1", { delay: 200 });
