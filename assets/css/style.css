@@ -435,7 +435,7 @@ section .title::after {
 
 .skills .skills-content .left .language-skills {
   display: flex;
-  margin-top: 20px;
+  margin-top: 40px;
   width: 100%;
 }
 
