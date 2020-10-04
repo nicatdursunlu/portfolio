@@ -45,7 +45,7 @@ $(document).ready(function () {
     reset: true,
   });
 
-  /* SCROLL COMMON */
+  //  scroll common
   sr.reveal(".services-content", {});
   sr.reveal(".education-content", {});
   sr.reveal(".education-content", {});
@@ -53,9 +53,18 @@ $(document).ready(function () {
   sr.reveal(".left", { delay: 200 });
   sr.reveal(".right", { delay: 600 });
 
-  /* SCROLL HOME */ 
+  // scroll home 
   sr.reveal(".text-1", { delay: 200 });
   sr.reveal(".hire-me", { delay: 200 });
   sr.reveal(".social-media", { interval: 200 });
 
+
+  // read more/less button 
+  $(".read-more").on("click", function () {
+    $(this).parent().toggleClass("show-content");
+    const replaceBtnTitle = $(this).parent().hasClass("show-content")
+      ? "Read less"
+      : "Read more";
+    $(this).text(replaceBtnTitle);
+  });
 });

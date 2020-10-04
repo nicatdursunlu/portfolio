@@ -390,6 +390,11 @@ section .title::after {
   width: calc(50% - 20px);
 }
 
+.skills .skills-content .left {
+  flex-direction: column;
+  justify-content: start;
+}
+
 .skills .skills-content .left .text {
   font-size: 25px;
   font-weight: 600;
@@ -398,6 +403,12 @@ section .title::after {
 
 .skills .skills-content .left p {
   text-align: justify;
+  height: 100px;
+  overflow: hidden;
+}
+
+.skills .skills-content .left .show-content p {
+  height: auto;
 }
 
 .skills .skills-content .left a {
@@ -510,7 +521,7 @@ svg circle:nth-child(2) {
 }
 
 .skills .skills-content .right .bars {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .skills .skills-content .right .info {
