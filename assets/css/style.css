@@ -419,7 +419,7 @@ section .title::after {
 }
 
 .skills .skills-content .left .language {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .skills .skills-content .left .language-skills {
@@ -510,7 +510,7 @@ svg circle:nth-child(2) {
 }
 
 .skills .skills-content .right .bars {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .skills .skills-content .right .info {
@@ -548,7 +548,7 @@ svg circle:nth-child(2) {
 }
 
 .skills-content .right .css::before {
-  width: 90%;
+  width: 85%;
 }
 
 .skills-content .right .bootstrap::before {
@@ -578,6 +578,11 @@ svg circle:nth-child(2) {
 .skills-content .right .prog-languages::before {
   width: 55%;
 }
+
+.skills-content .right .design::before {
+  width: 80%;
+}
+
 
 /* education section   */
 
