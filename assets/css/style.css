@@ -672,10 +672,8 @@ svg circle:nth-child(2) {
   margin-left: 16px;
   margin-right: 16px;
   row-gap: 2rem;
-
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  /* column-gap: 2rem; */
 }
 
 .grid {
@@ -695,10 +693,11 @@ svg circle:nth-child(2) {
   max-width: 100%;
   height: auto;
   display: block;
+  height: 200px;
 }
 
 .grid img:hover {
-  transform: scale(1.4);
+  transform: scale(1.1);
 }
 
 .grid .name {
