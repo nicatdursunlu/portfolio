@@ -274,6 +274,10 @@ section .title::after {
   color: rgb(94, 88, 88);
 }
 
+.home .home-content .twitter:hover {
+  color: #1DA1F2;
+}
+
 .home .home-content .right img {
   width: 300px;
   height: 300px;
@@ -923,6 +927,10 @@ footer .footer-social-media .instagram:hover {
   border-radius: 6px;
 }
 
+footer .footer-social-media .twitter:hover {
+  color: #1DA1F2;
+}
+
 /* responsive media query */
 
 @media (max-width: 1300px) {
@@ -1116,6 +1124,7 @@ footer .footer-social-media .instagram:hover {
   }
   footer .footer-social-media .icons {
     font-size: 25px;
+    margin-right: 10px;
   }
 }
 
@@ -1124,7 +1133,7 @@ footer .footer-social-media .instagram:hover {
     height: 120vh;
   }
   footer .footer-social-media .icons {
-    font-size: 20px;
+    font-size: 22px;
   }
   footer span {
     font-size: 10px;
