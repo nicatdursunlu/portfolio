@@ -702,13 +702,17 @@ svg circle:nth-child(2) {
     transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
 }
 
+.grid-hidden {
+  display: none;
+}
+
 .grid img {
   transition: all 0.3s ease;
   cursor: pointer;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
   display: block;
-  height: 200px;
+  /* height: 200px; */
 }
 
 .grid img:hover {
@@ -729,6 +733,7 @@ svg circle:nth-child(2) {
 .load-more-container {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .load-more-btn {

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  
+
   $(window).scroll(function () {
     if (this.scrollY > 20) {
       $(".navbar").addClass("sticky");
@@ -50,7 +50,8 @@ $(document).ready(function () {
   sr.reveal(".services-content", {});
   sr.reveal(".education-content", {});
   sr.reveal(".education-content", {});
-  sr.reveal(".works-container", {});
+  sr.reveal(".works", {});
+  // sr.reveal(".load-more-container", { delay: 100 });
   sr.reveal(".left", { delay: 200 });
   sr.reveal(".right", { delay: 600 });
 
@@ -68,4 +69,21 @@ $(document).ready(function () {
       : "Read more";
     $(this).text(replaceBtnTitle);
   });
+
+  // load more button 
+  $(function () {
+
+    $('grid-hidden').slice(0, 6).show();
+
+    $('.load-more-btn').on('click', function (e) {
+      e.preventDefault();
+      $(".grid-hidden:hidden").slice(0, 3).slideDown();
+      // if($('.grid-hidden:hidden').length ===0 ) {
+
+      // }
+      // $('html, body').animate({
+      //   scrollTop: $(this).offset().top
+      // }, 1500);
+    })
+  })
 });
