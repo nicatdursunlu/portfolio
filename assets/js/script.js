@@ -51,6 +51,7 @@ $(document).ready(function () {
   sr.reveal(".education-content", {});
   sr.reveal(".education-content", {});
   sr.reveal(".works", {});
+  
   // sr.reveal(".load-more-container", { delay: 100 });
   sr.reveal(".left", { delay: 200 });
   sr.reveal(".right", { delay: 600 });

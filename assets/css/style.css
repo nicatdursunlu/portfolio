@@ -692,6 +692,7 @@ svg circle:nth-child(2) {
 }
 
 .grid {
+  position: relative;
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
@@ -700,25 +701,78 @@ svg circle:nth-child(2) {
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s,
     transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
+  height: 200px;
 }
 
 .grid-hidden {
   display: none;
 }
 
-.grid img {
+.grid:hover .grid-hover {
+  display: flex;
+}
+
+.grid-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background-color: rgba(46, 52, 64, 0.8);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hover-icons {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.project-link{
+  color: gray;
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+
+.project-link:hover {
+  color: #fff;
+  background-color: gray;
+}
+
+.project-name {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: crimson;
+}
+
+.project-type {
+  font-size: 20px;
+}
+
+
+.project-image {
   transition: all 0.3s ease;
   cursor: pointer;
   max-width: 100%;
-  /* height: auto; */
   display: block;
-  /* height: 200px; */
+  height: 200px;
 }
 
-.grid img:hover {
+/* .grid img:hover {
   transform: scale(1.1);
-}
-
+} */
+/* 
 .grid .name {
   position: absolute;
   bottom: 5px;
@@ -728,7 +782,7 @@ svg circle:nth-child(2) {
   font-size: 25px;
   font-weight: 600;
   color: crimson;
-}
+} */
 
 .load-more-container {
   display: flex;
