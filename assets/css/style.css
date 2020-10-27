@@ -747,11 +747,12 @@ svg circle:nth-child(2) {
 .project-link:hover {
   color: #fff;
   background-color: gray;
+  border: 1px solid #fff;
 }
 
 .project-name {
   text-align: center;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 700;
   color: crimson;
 }
