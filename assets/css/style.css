@@ -777,7 +777,7 @@ svg circle:nth-child(2) {
 .project-image {
   transition: all 0.3s ease;
   cursor: pointer;
-  max-width: 100%;
+  width: 100%;
   display: block;
   height: 200px;
 }
