@@ -275,7 +275,7 @@ section .title::after {
 }
 
 .home .home-content .twitter:hover {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 .home .home-content .right img {
@@ -578,12 +578,24 @@ svg circle:nth-child(2) {
   width: 90%;
 }
 
+.skills-content .right .vue::before {
+  width: 90%;
+}
+
 .skills-content .right .react-native::before {
   width: 90%;
 }
 
 .skills-content .right .redux::before {
   width: 85%;
+}
+
+.skills-content .right .vuex::before {
+  width: 80%;
+}
+
+.skills-content .right .java::before {
+  width: 70%;
 }
 
 .skills-content .right .git::before {
@@ -597,7 +609,6 @@ svg circle:nth-child(2) {
 .skills-content .right .design::before {
   width: 80%;
 }
-
 
 /* education section   */
 
@@ -672,7 +683,6 @@ svg circle:nth-child(2) {
   padding: 20px;
 }
 
-
 /* works section  */
 
 .works .title::after {
@@ -699,8 +709,7 @@ svg circle:nth-child(2) {
   visibility: visible;
   opacity: 1;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s,
-    transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
+  transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
   height: 200px;
 }
 
@@ -735,7 +744,7 @@ svg circle:nth-child(2) {
   margin-bottom: 20px;
 }
 
-.project-link{
+.project-link {
   color: gray;
   background-color: #fff;
   border-radius: 100%;
@@ -760,7 +769,6 @@ svg circle:nth-child(2) {
 .project-type {
   font-size: 20px;
 }
-
 
 .project-image {
   transition: all 0.3s ease;
@@ -986,36 +994,15 @@ footer .footer-social-media .facebook:hover {
 
 footer .footer-social-media .instagram:hover {
   background: #f09433;
-  background: -moz-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   border-radius: 6px;
 }
 
 footer .footer-social-media .twitter:hover {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 /* responsive media query */
@@ -1195,7 +1182,7 @@ footer .footer-social-media .twitter:hover {
   .language-skills .box {
     margin-right: 30px;
   }
-  .works-container { 
+  .works-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
     column-gap: 2rem;
