@@ -422,7 +422,7 @@ section .title::after {
   font-size: 18px;
   font-weight: 500;
   padding: 8px 16px;
-  margin-top: 20px;
+  margin-top: 40px;
   border-radius: 6px;
   border: 2px solid crimson;
   transition: all 0.3 ease;
@@ -434,7 +434,7 @@ section .title::after {
 }
 
 .skills .skills-content .left .language {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .skills .skills-content .left .language-skills {
@@ -596,6 +596,10 @@ svg circle:nth-child(2) {
 
 .skills-content .right .java::before {
   width: 70%;
+}
+
+.skills-content .right .sql::before {
+  width: 65%;
 }
 
 .skills-content .right .git::before {
